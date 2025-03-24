@@ -1,49 +1,186 @@
-# Markdown
- Alguns exemplos de formatações na linguagem markdown:
+# Guia de Formatação em Markdown
 
- # Para criar um título de nível 1 é inserido # no início do texto.
- ## Para criar um título de nível 2 é inserido ## no início do texto.
- ### Para criar um título de nível 3 é inserido ### no início do texto.
- 
- **Para deixar uma fonte em negrito é utilizado ** ou __ em cada lado do texto.**
- 
- *Para deixar uma fonte em itálico é utilizado * ou _ em cada lado do texto.*
- 
- ~~Para deixar uma fonte riscada é utilizado ~~ em cada lado do texto.~~
+Este arquivo tem como objetivo ensinar a criar e formatar um README para o GitHub utilizando a linguagem Markdown. Um README bem estruturado ajuda a documentar seu projeto, tornando-o mais acessível e compreensível para outros desenvolvedores.
 
+## Títulos
 
- para adicionar um linha só é necessário inserir --- ou ***
- 
- ---
- Para criar um lista numerada inserimos qualquer número seguido de um . antes do texto
- 1. exemplo1
- 2. exemplo2
- 8. exemplo3
- 100. exemplo4
- 1. exemplo5
+Para criar títulos, utilize `#` no início do texto, conforme o nível desejado:
 
- para adicionar um subitem criamos uma nova lista abaixo de outra lista contendo três espaços antes do número.
- 1. item1
-    1. subitem1
-    1. subitem2
- 2. item2
- 3. item3
-    3. subitem3
-   
- Para criar um lista demarcada inserimos * ou - antes do texto do texto de cada item.
- * Exemplo1
- - Exemplo2
+```markdown
+# Título de Nível 1
+## Título de Nível 2
+### Título de Nível 3
+```
 
- Para criar um lista de tarefas inserimos - [ ] antes do texto do texto de cada tarefa, e para marcarmos a tarefa como coluída inserimos um x entre os colchetes.
- - [x] Tarefa exemplo 1
- - [ ] Tarefa exemplo 2
+## Estilos de Texto
 
-para adicionar uma imagem só é necessário arrastar uma imagem de seus arquivos até a barra de mídia do GitHub.
+- **Negrito**: Utilize `**texto**` ou `__texto__` → **Exemplo**
+- *Itálico*: Utilize `*texto*` ou `_texto_` → *Exemplo*
+- ~~Texto Tachado~~: Utilize `~~texto~~` → ~~Exemplo~~
+- **_Combinação de Negrito e Itálico_**: Utilize `***texto***` → ***Exemplo***
+
+## Linhas Horizontais
+
+Para adicionar uma linha horizontal, utilize `---` ou `***`:
+
+```markdown
+---
+```
+
+---
+
+## Listas
+
+### Lista Numerada
+
+Para criar uma lista numerada, utilize números seguidos de um ponto:
+
+```markdown
+1. Item 1
+2. Item 2
+3. Item 3
+```
+
+Resultado:
+
+1. Item 1
+2. Item 2
+3. Item 3
+
+### Lista Demarcada
+
+Utilize `*` ou `-` antes do texto:
+
+```markdown
+* Item 1
+- Item 2
+```
+
+Resultado:
+
+* Item 1
+- Item 2
+
+### Lista de Tarefas
+
+Para criar uma lista de tarefas, utilize `- [ ]` antes do texto. Para marcar uma tarefa como concluída, adicione `x` entre os colchetes:
+
+```markdown
+- [x] Tarefa concluída
+- [ ] Tarefa pendente
+```
+
+Resultado:
+
+- [x] Tarefa concluída
+- [ ] Tarefa pendente
+
+### Subitens em Listas
+
+Subitens podem ser utilizados em qualquer tipo de lista (numerada, demarcada e de tarefas). Para criar um subitem, utilize três espaços antes do símbolo correspondente:
+
+```markdown
+1. Item principal
+   1. Subitem 1
+   2. Subitem 2
+
+* Item principal
+   * Subitem 1
+   * Subitem 2
+
+- [ ] Tarefa principal
+   - [ ] Subtarefa 1
+   - [x] Subtarefa 2 concluída
+```
+
+Resultado:
+
+1. Item principal
+   1. Subitem 1
+   2. Subitem 2
+
+* Item principal
+   * Subitem 1
+   * Subitem 2
+
+- [ ] Tarefa principal
+   - [ ] Subtarefa 1
+   - [x] Subtarefa 2 concluída
+
+## Citações
+
+Para adicionar uma citação, utilize `>` antes do texto:
+
+```markdown
+> "O único modo de fazer um excelente trabalho é amar o que você faz." – Steve Jobs
+```
+
+Resultado:
+
+> "O único modo de fazer um excelente trabalho é amar o que você faz." – Steve Jobs
+
+## Adicionando Código
+
+Para adicionar trechos de código inline, utilize crases (`). Exemplo:
+
+```markdown
+Aqui está um comando `git status`.
+```
+
+Para adicionar blocos de código, use três crases no início e no fim do trecho:
+
+```markdown
+```python
+print("Hello, World!")
+```
+```
+
+Resultado:
+
+```python
+print("Hello, World!")
+```
+
+## Adicionando Imagens
+
+Para adicionar uma imagem, arraste-a para a barra de mídia do GitHub ou utilize o seguinte formato:
+
+```markdown
+![Descrição da imagem](https://link-da-imagem.com)
+```
 
 Exemplo:
-![images](https://github.com/user-attachments/assets/69cc4186-172c-4ef1-8162-0c581b4c3d00)
 
-Para criar um Link clicável colocamos entre colchetes o queremos que apareça em seguidas colocamo enttre parênteses o link.
+![Imagem de Exemplo](https://github.com/user-attachments/assets/69cc4186-172c-4ef1-8162-0c581b4c3d00)
 
-Exemplo:
+## Criando Links Clicáveis
+
+Para criar um link clicável, utilize colchetes para o texto do link e parênteses para a URL:
+
+```markdown
 [Acesse meu GitHub](https://github.com/roberio-junior)
+```
+
+Resultado:
+
+[Acesse meu GitHub](https://github.com/roberio-junior)
+
+## Tabelas
+
+Para criar tabelas, utilize `|` para separar colunas e `-` para criar o cabeçalho:
+
+```markdown
+| Nome   | Idade | Cidade       |
+|--------|------|-------------|
+| Ana    | 25   | São Paulo   |
+| Bruno  | 30   | Rio de Janeiro |
+```
+
+Resultado:
+
+| Nome   | Idade | Cidade       |
+|--------|------|-------------|
+| Ana    | 25   | São Paulo   |
+| Bruno  | 30   | Rio de Janeiro |
+
+---
