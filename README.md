@@ -1,6 +1,6 @@
 # Guia de Formatação em Markdown
 
-Este arquivo tem como objetivo ensinar a criar e formatar um README para o GitHub utilizando a linguagem Markdown. Um README bem estruturado ajuda a documentar seu projeto, tornando-o mais acessível e compreensível para outros desenvolvedores.
+Este repositório tem como objetivo ensinar a criar e formatar um README para o GitHub utilizando a linguagem Markdown. Um README bem estruturado ajuda a documentar seu projeto, tornando-o mais acessível e compreensível para outros desenvolvedores.
 
 ## Títulos
 
