@@ -129,11 +129,11 @@ Aqui está um comando `git status`.
 
 Para adicionar blocos de código, use três crases no início e no fim do trecho:
 
-```markdown
-```python
-print("Hello, World!")
-```
-```
+<pre>
+   ```python
+   print("Hello, World!")
+   ```
+</pre>
 
 Resultado:
 
